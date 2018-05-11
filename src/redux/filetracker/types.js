@@ -1,0 +1,3 @@
+export const ADD_NEW_CATEGORY = "ADD_NEW_CATEGORY";
+
+export const PRINT_BROWSE_FILES = "PRINT_BROWSE_FILES";
