@@ -66,7 +66,7 @@ export default function mailList(
   };
   return (
     <FolderListWrapper className="isoMailListWrapper">
-       {mails.map((mail, index) => renderSingleMail(mail, index))}
+       
     </FolderListWrapper>
   );
 }
