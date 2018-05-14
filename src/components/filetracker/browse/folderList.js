@@ -1,8 +1,8 @@
 import React from 'react';
-import { timeDifference } from '../../helpers/utility';
+import { timeDifference } from '../../../helpers/utility';
 import { tags, tagColor } from './mailTags.js';
 import FolderListWrapper from './folderList.style';
-import { rtl } from '../../config/withDirection';
+import { rtl } from '../../../config/withDirection';
 
 export default function mailList(
   mails,
@@ -66,7 +66,7 @@ export default function mailList(
   };
   return (
     <FolderListWrapper className="isoMailListWrapper">
-      {mails.map((mail, index) => renderSingleMail(mail, index))}
+       {mails.map((mail, index) => renderSingleMail(mail, index))}
     </FolderListWrapper>
   );
 }

@@ -5,6 +5,7 @@ import IsoWidgetsWrapper from "../../../containers/Widgets/widgets-wrapper";
 import StickerWidget from "../../../containers/Widgets/sticker/sticker-widget";
 import { StickerWidgetWrapper } from '../../../containers/Widgets/sticker/style';
 import folderList from './folderList';
+import Scrollbars from '../../utility/customScrollBar.js';
 
 import {
   printBrowseFiles
@@ -19,17 +20,14 @@ class DisplayBrowseFiles extends Component {
       <div>
         <div className="isoMiddleWrapper">
           <div className="isoBucketLabel">
-            <h3>bucket</h3>
-            <PaginationControl />
+            <h3>bucket 1</h3>
+
           </div>
           <div className="isoSearchMailWrapper">
-            <InputSearch
-              placeholder="Search Email"
-              value={search}
-              className="isoSearchEmail"
-            />
+            <h3>bucket 2</h3>
           </div>
           <Scrollbars>
+            <h3>bucket 3</h3>
             {folderList()}
           </Scrollbars>
         </div>

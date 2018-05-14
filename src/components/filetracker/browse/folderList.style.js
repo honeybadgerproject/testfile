@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { palette } from 'styled-theme';
-import { borderRadius, transition } from '../../config/style-util';
-import WithDirection from '../../config/withDirection';
+import WithDirection from '../../../config/withDirection';
+import { borderRadius, transition } from '../../../config/style-util';
 
 const MailListWrapper = styled.div`
   width: 100%;

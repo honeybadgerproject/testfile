@@ -17,11 +17,28 @@ const preKeys = getDefaultPath();
 });*/
 
 const initState = {
+  // categoryList follow all the variables in cateries section
   categoryList: [ {
-    title: 'geometri basic',
-    group: 'math'
+    title: 'default',
+    group: 'none'
   }],
-  filesList: [ ],
+  // folderList follow all the variables in browse section
+  folderList: [ {
+    title: 'folder1',
+    type: 'folder'
+  } , {
+    title: 'folder2',
+    type: 'folder'
+  }],
+  // fileList follow all the variables in browse section
+  fileList: [{
+    title: 'file1',
+    type: 'doc'
+  } , {
+    title: 'image',
+    type: 'jpg'
+  }],
+  // selected browse file
   selectedBrowseFile: ''
 }
 
