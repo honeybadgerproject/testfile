@@ -13,18 +13,17 @@ export default function mailList(
   
   return (
     <FolderListWrapper className="isoMailListWrapper">
-       <h1>bucket</h1>
        <div className="isoMailList">
           <span className="isoLabelIndicator" />
           <div className="isoRecipentsImg">
-            image
+            <i class="icon ion-folder" style={{fontSize: '50px'}}></i>
           </div>
           <div className="isoMailInfo">
             <div className="infoHead">
-              <p className="isoRecipents">name</p>
-              <span className="isoReceiveDate">date</span>
+              <p className="isoRecipents">folder 1</p>
+              <span className="isoReceiveDate">09/09/2018</span>
             </div>
-            <p className="isoSubject">subject</p>
+            <p className="isoSubject">this folder is one</p>
           </div>
        </div>
     </FolderListWrapper>

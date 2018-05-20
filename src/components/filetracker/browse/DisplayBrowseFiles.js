@@ -60,10 +60,6 @@ class DisplayBrowseFiles extends Component {
         <div className="isoMiddleWrapper">
           <div className="isoBucketLabel">
             <h3>folder browser</h3>
-
-          </div>
-          <div className="isoSearchMailWrapper">
-            <h3></h3>
           </div>
           <Scrollbars>
             {folderList()}
@@ -71,7 +67,7 @@ class DisplayBrowseFiles extends Component {
         </div>
         <div className="isoSingleMailWrapper">
           <Scrollbars style={{ height: this.props.height - 70 }}>
-
+            <i class="icon ion-document" style={{fontSize: '50px'}}></i>
           </Scrollbars>
         </div>
       </MailBox>
