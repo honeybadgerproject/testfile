@@ -10,63 +10,23 @@ export default function mailList(
   selectedMail,
   toggleListVisible
 ) {
-  const renderSingleMail = (mail, key) => {
-    const onClick = () => {
-      selectMail(mail.id);
-      if (toggleListVisible) {
-        toggleListVisible();
-      }
-    };
-    const isSelected = selectedMail === mail.id;
-    const recpName = mail.name;
-    const signature = {
-      splitLet: recpName
-        .match(/\b(\w)/g)
-        .join('')
-        .split('', 2)
-    };
-    const activeClass = isSelected ? 'activeMail' : '';
-    const unreadClass = !mail.read ? 'unreadMail' : '';
-    const tagOption = mail.tags
-      ? tagColor[tags.findIndex(tags => tags === mail.tags)]
-      : 'transparent';
-    return (
-      <div
-        key={`list${key}`}
-        onClick={onClick}
-        className={`${activeClass} ${unreadClass} isoMailList`}
-      >
-        <span
-          className="isoLabelIndicator"
-          style={
-            rtl === 'rtl' ? (
-              { borderRightColor: tagOption }
-            ) : (
-              { borderTopColor: tagOption }
-            )
-          }
-        />
-        <div className="isoRecipentsImg">
-          {mail.img ? (
-            <img alt="#" src={mail.img} />
-          ) : (
-            <span>{signature.splitLet}</span>
-          )}
-        </div>
-
-        <div className="isoMailInfo">
-          <div className="infoHead">
-            <p className="isoRecipents">{mail.name}</p>
-            <span className="isoReceiveDate">{timeDifference(mail.date)}</span>
-          </div>
-          <p className="isoSubject">{mail.subject}</p>
-        </div>
-      </div>
-    );
-  };
+  
   return (
     <FolderListWrapper className="isoMailListWrapper">
-       
+       <h1>bucket</h1>
+       <div className="isoMailList">
+          <span className="isoLabelIndicator" />
+          <div className="isoRecipentsImg">
+            image
+          </div>
+          <div className="isoMailInfo">
+            <div className="infoHead">
+              <p className="isoRecipents">name</p>
+              <span className="isoReceiveDate">date</span>
+            </div>
+            <p className="isoSubject">subject</p>
+          </div>
+       </div>
     </FolderListWrapper>
   );
 }

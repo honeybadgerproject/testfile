@@ -44,7 +44,7 @@ class DisplayBrowseFiles extends Component {
 
       </p>
     );
-    const index = allMails.findIndex(mail => mail.id === selectedMail);
+    const index = -1; 
     if (index !== -1) {
       singleMailComponent = singleMail(
         allMails,
@@ -57,19 +57,15 @@ class DisplayBrowseFiles extends Component {
     }
     return (
       <MailBox className="isomorphicMailBox">
-        <div className="isoLeftWrapper">
-
-        </div>
         <div className="isoMiddleWrapper">
           <div className="isoBucketLabel">
-            <h3>bucket 1</h3>
+            <h3>folder browser</h3>
 
           </div>
           <div className="isoSearchMailWrapper">
-            <h3>bucket 2</h3>
+            <h3></h3>
           </div>
           <Scrollbars>
-            <h3>bucket 3</h3>
             {folderList()}
           </Scrollbars>
         </div>
