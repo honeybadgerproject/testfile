@@ -14,23 +14,7 @@ class CategoryDashboard extends Component {
     return (
       <div>
           <Row gutter={32}>
-
-          {
-            this.props.filetracker.categoryList.map((item, index) => (
-                <Col md={8} sm={12} xs={24} key={index}>
-                  <IsoWidgetsWrapper>
-                    {/* Sticker Widget */}
-                    <StickerWidget
-                      number={item.title}
-                      text={item.group}
-                      icon="ion-paper-airplane"
-                      fontColor="#ffffff"
-                      bgColor="#F75D81"
-                    />
-                  </IsoWidgetsWrapper>
-                </Col>
-            ))
-          }
+          
           </Row>
 
       </div>
